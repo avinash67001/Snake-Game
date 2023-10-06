@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Press+Start+2P&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("../Images/Blur-Background.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Play-Box {
+  overflow-y: scroll;
+  padding: 25px;
+  height: 90vh;
+  width: 80vw;
+}
+
+.Play-Box::-webkit-scrollbar {
+  display: none;
+}
+
+.Play-Box p,
+li {
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+}
+
+.Play-Box h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: x-large;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.Play-Box h2{
+  font-family: 'Press Start 2P', cursive;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+}

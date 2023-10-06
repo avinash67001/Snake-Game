@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Press+Start+2P&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: url("../Images/Blur-Background.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ScoreBox {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#HighScoreBox {
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#board {
+  background: url("../Images/Board.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 108vmin;
+  height: 92vmin;
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+}
+
+#GameOver {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.snakehead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../Images/Head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.snakebody {
+  background-image: radial-gradient(
+    circle,
+    rgb(160, 239, 41),
+    rgb(36, 236, 56)
+  );
+  border-radius: 20px;
+}
+
+.food {
+  background: url("../Images/Apple.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  left: 610px;
+  top: 20px;
+}
+#pause-button{
+border-top-left-radius:15px;
+border-bottom-left-radius: 15px;
+}
+#play-button{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#pause-button,
+#play-button {
+  margin-right: 6px;
+  height: 30px;
+  width: 80px;
+  background-color: rgb(34, 146, 34);
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-weight: lighter;
+  font-size: small;
+  box-shadow: -10px 7px rgba(0, 0, 0, 0.7);
+}
